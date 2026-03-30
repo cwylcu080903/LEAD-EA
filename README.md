@@ -23,10 +23,10 @@ LEAD-EA is designed to automatically generate and refine evolutionary algorithms
 ```text
 LEAD-EA/
 │── dataset/                # Benchmark instances (TA01–TA20)
-│── algorithmlib.py         # Core algorithmic components
-│── cp_model.py             # CP model implementation
-│── milp_model.py           # MILP model implementation
-│── main.py                 # Main entry for running LEAD-EA
+│── algorithmlib.py         # Elite algorithm configurations and structures
+│── cp_model.py             # CP model
+│── milp_model.py           # MILP model
+│── main.py                 # LEAD-EA
 ```
 ---
 
@@ -51,16 +51,6 @@ The current repository provides the implementation of the MILP model, CP model, 
 However, the context-aware code correction module used in LEAD-EA is not included in this release.
 This component relies on a dataset of code correction examples constructed through data collection and preprocessing. 
 Due to the substantial effort required to build and maintain this dataset, it is not included in the current release.
-
-## Citation
-If you find this repository useful, please consider citing:
-
-@article{yourpaper2026,
-  title={Your Paper Title},
-  author={Author1 and Author2 and Author3},
-  journal={Under Review},
-  year={2026}
-}
 
 ## Contact
 For questions or collaborations, please contact:
