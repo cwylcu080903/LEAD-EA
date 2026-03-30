@@ -1,4 +1,6 @@
 # LEAD-EA
+This repository is associated with Learning from Elites: LLM-Driven Automated Design of Evolutionary Algorithms for Job Shop Scheduling Problem with Sequence-dependent Setup Times.
+The corresponding manuscript is currently under review and corrponsidng code will be made publicly available upon acceptance.
 
 This repository provides the implementation of the MILP model, CP model, and LEAD-EA for solving the job shop scheduling problem with sequence-dependent setup times (JSP-SDST).
 
@@ -17,37 +19,39 @@ LEAD-EA is designed to automatically generate and refine evolutionary algorithms
 ---
 
 ## Repository Structure
-
+```text
 LEAD-EA/
 │── dataset/                # Benchmark instances (TA01–TA20)
 │── algorithmlib.py         # Core algorithmic components
 │── cp_model.py             # CP model implementation
 │── milp_model.py           # MILP model implementation
 │── main.py                 # Main entry for running LEAD-EA
-
+```
 ---
 
 ## Requirements
+```text
 numpy==1.24.3
 shap==0.49.1
 openai==2.29.0
 scikit-learn==1.7.2
 docplex==2.31.254
-
+```
 ---
 
 ## How to run results
+```bash
 Run the MILP model
 python milp_model.py
 Run the CP model
 python cp_model.py
 Run LEAD-EA
 python main.py
-
+```
 ---
 
 ## Dataset
-Benchmark instances are provided in the dataset/ directory.
+Benchmark instances are provided in the dataset.
 Please ensure the dataset path is correctly specified before running experiments.
 
 
@@ -56,10 +60,6 @@ The current repository provides the implementation of the MILP model, CP model, 
 However, the context-aware code correction module used in LEAD-EA is not included in this release.
 This component relies on a dataset of code correction examples constructed through data collection and preprocessing. 
 Due to the substantial effort required to build and maintain this dataset, it is not included in the current release.
-
-## Related Work
-This repository is associated with ongoing research on JSP-SDST and automated algorithm design.
-The corresponding manuscript is currently under review and will be made publicly available upon acceptance.
 
 ## Citation
 If you find this repository useful, please consider citing:
