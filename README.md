@@ -1,4 +1,5 @@
 # LEAD-EA
+
 This repository provides the implementation of the MILP model, CP model, and LEAD-EA for solving the job shop scheduling problem with sequence-dependent setup times (JSP-SDST).
 
 ---
@@ -19,25 +20,24 @@ LEAD-EA is designed to automatically generate and refine evolutionary algorithms
 
 ```text
 EvoPlace/
-│── dataset/                # Benchmark instances (TA01-20)
-│── algorithmlib.py         # Elite algorithm configurations and structures
+│── dataset/                # Benchmark instances (TA01–TA20)
+│── algorithmlib.py         # Core algorithmic components
 │── cp_model.py             # CP model implementation
 │── milp_model.py           # MILP model implementation
 │── main.py                 # Main entry for running LEAD-EA
-
 Requirements
-numpy==1.24.3
-shap==0.49.1
-openai==2.29.0
-scikit-learn==1.7.2
-docplex==2.31.254
 
 Install Python dependencies:
 
-pip install numpy pandas scikit-learn shap docplex
+pip install -r requirements.txt
+Additional requirements
 
-Note:
-The MILP and CP models rely on IBM CPLEX and CP Optimizer. Please ensure they are properly installed and configured.
+The MILP and CP models rely on IBM ILOG CPLEX Optimization Studio, including:
+
+CPLEX Optimizer
+CP Optimizer
+
+Please ensure they are properly installed and configured.
 
 Usage
 Run the MILP model
@@ -49,6 +49,7 @@ python main.py
 Dataset
 
 Benchmark instances are provided in the dataset/ directory.
+
 Please ensure the dataset path is correctly specified before running experiments.
 
 Reproducibility
@@ -72,13 +73,13 @@ We are actively working on this direction and plan to release a more complete ve
 
 Related Work
 
-This repository is associated with our ongoing research on JSP-SDST and automated algorithm design.
+This repository is associated with ongoing research on JSP-SDST and automated algorithm design.
 
 The corresponding manuscript is currently under review and will be made publicly available upon acceptance.
 
 Citation
 
-If you find this repository useful, please consider citing our work:
+If you find this repository useful, please consider citing:
 
 @article{yourpaper2026,
   title={Your Paper Title},
