@@ -1,6 +1,7 @@
 # LEAD-EA
-This repository is associated with Learning from Elites: LLM-Driven Automated Design of Evolutionary Algorithms for Job Shop Scheduling Problem with Sequence-dependent Setup Times.
-The corresponding manuscript is currently under review and corrponsidng code will be made publicly available upon acceptance.
+This repository is associated with the paper titled "Learning from Elites: LLM-Driven Automated Design of Evolutionary Algorithms for the Job Shop Scheduling Problem with Sequence-Dependent Setup Times".
+
+The corresponding manuscript is currently under review, and the code will be made publicly available upon acceptance.
 
 This repository provides the implementation of the MILP model, CP model, and LEAD-EA for solving the job shop scheduling problem with sequence-dependent setup times (JSP-SDST).
 
