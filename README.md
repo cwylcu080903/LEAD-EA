@@ -18,67 +18,50 @@ LEAD-EA is designed to automatically generate and refine evolutionary algorithms
 
 ## Repository Structure
 
-```text
-EvoPlace/
+LEAD-EA/
 │── dataset/                # Benchmark instances (TA01–TA20)
 │── algorithmlib.py         # Core algorithmic components
 │── cp_model.py             # CP model implementation
 │── milp_model.py           # MILP model implementation
 │── main.py                 # Main entry for running LEAD-EA
-Requirements
 
-Install Python dependencies:
+---
 
-pip install -r requirements.txt
-Additional requirements
+## Requirements
+numpy==1.24.3
+shap==0.49.1
+openai==2.29.0
+scikit-learn==1.7.2
+docplex==2.31.254
 
-The MILP and CP models rely on IBM ILOG CPLEX Optimization Studio, including:
+---
 
-CPLEX Optimizer
-CP Optimizer
-
-Please ensure they are properly installed and configured.
-
-Usage
+## How to run results
 Run the MILP model
 python milp_model.py
 Run the CP model
 python cp_model.py
 Run LEAD-EA
 python main.py
-Dataset
 
+---
+
+## Dataset
 Benchmark instances are provided in the dataset/ directory.
-
 Please ensure the dataset path is correctly specified before running experiments.
 
-Reproducibility
 
-To reproduce the experimental results:
-
-Install all required dependencies
-Prepare the dataset in the dataset/ folder
-Run the corresponding scripts for MILP, CP, or LEAD-EA
-
-Due to stochastic components in LEAD-EA, multiple runs may be required to obtain stable results.
-
-Important Note on Code Availability
-
-The current repository provides the full implementation of the MILP model, CP model, and the LEAD-EA framework.
-
+## Important Note on Code Availability
+The current repository provides the implementation of the MILP model, CP model, and the LEAD-EA framework.
 However, the context-aware code correction module used in LEAD-EA is not included in this release.
-This component relies on a curated dataset of code correction examples constructed from extensive data collection and preprocessing.
+This component relies on a dataset of code correction examples constructed through data collection and preprocessing. 
+Due to the substantial effort required to build and maintain this dataset, it is not included in the current release.
 
-We are actively working on this direction and plan to release a more complete version in future work.
-
-Related Work
-
+## Related Work
 This repository is associated with ongoing research on JSP-SDST and automated algorithm design.
-
 The corresponding manuscript is currently under review and will be made publicly available upon acceptance.
 
-Citation
-
+## Citation
 If you find this repository useful, please consider citing:
 
 @article{yourpaper2026,
@@ -87,11 +70,7 @@ If you find this repository useful, please consider citing:
   journal={Under Review},
   year={2026}
 }
-Contact
 
+## Contact
 For questions or collaborations, please contact:
-
-Your Name: your_email@example.com
-License
-
-This project is released under the MIT License.
+Weiyao Cheng: weiyao_cheng@163.com
