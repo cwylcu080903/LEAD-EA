@@ -1,5 +1,5 @@
 # LEAD-EA
-This repository is associated with the paper titled "Learning from Elites: LLM-Driven Automated Design of Evolutionary Algorithms for the Job Shop Scheduling Problem with Sequence-Dependent Setup Times".
+This repository is associated with the paper titled **"Learning from Elites: LLM-Driven Automated Design of Evolutionary Algorithms for the Job Shop Scheduling Problem with Sequence-Dependent Setup Times"**.
 
 The corresponding manuscript is currently under review, and the code will be made publicly available upon acceptance.
 
@@ -40,16 +40,6 @@ docplex==2.31.254
 ```
 ---
 
-## How to run results
-```bash
-Run the MILP model
-python milp_model.py
-Run the CP model
-python cp_model.py
-Run LEAD-EA
-python main.py
-```
----
 
 ## Dataset
 Benchmark instances are provided in the dataset.
