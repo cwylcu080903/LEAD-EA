@@ -13,7 +13,7 @@ This project includes three main components:
 
 - **MILP model**: a mixed-integer linear programming model for JSP-SDST  
 - **CP model**: a constraint programming model for JSP-SDST  
-- **LEAD-EA**: a large language model (LLM)-driven automated evolutionary algorithm design framework  
+- **LEAD-EA**: a large language model-driven automated evolutionary algorithm design framework  
 
 LEAD-EA is designed to automatically generate and refine evolutionary algorithms by jointly evolving algorithm configurations and structures.
 
