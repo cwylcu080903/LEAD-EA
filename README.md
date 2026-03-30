@@ -26,13 +26,11 @@ EvoPlace/
 │── main.py                 # Main entry for running LEAD-EA
 
 Requirements
-Python 3.10
-numpy
-pandas
-scikit-learn
-shap
-docplex
-IBM ILOG CPLEX Optimization Studio (required for MILP and CP models)
+numpy==1.24.3
+shap==0.49.1
+openai==2.29.0
+scikit-learn==1.7.2
+docplex==2.31.254
 
 Install Python dependencies:
 
